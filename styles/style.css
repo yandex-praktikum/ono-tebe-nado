@@ -30,6 +30,7 @@
   color: #000;
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.35;
   list-style: circle;
 }
 
@@ -38,7 +39,7 @@
 }
 
 .header__menu_link {
-  border-bottom: 2px #000 solid;
+  border-bottom: 1px #000 solid;
   text-decoration: none;  
 }
 
@@ -54,7 +55,7 @@
 
 .header_logo-black {
   width: 148px;
-  height: 109px;
+  height: 105px;
 }
 
 /* ---- Правая менюшка ---- */
@@ -67,16 +68,14 @@
   color: #000;
   font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  line-height: 1.2;
+  line-height: 1.35;
   text-underline-offset: 2px;
 }
 
 .address {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-style: normal;
-  line-height: 1.35; 
+  font-style: inherit;
 }
 
 /* ---- ОПИСАНИЕ COVER ---- */
@@ -107,7 +106,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 165px 50px 135px 50px;
+  padding: 165px 50px 140px 50px;
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -120,25 +119,25 @@
 
 .aligned-text {
   display: block;
+  line-height: 1.1;
   text-align: left;
 }
 
 .aligned-text_letter-spacing {
-  line-height: 1;
   letter-spacing: 60px;
 }
 
 
 .aligned-text_center {
   display: block;
-  line-height: 1;
+  line-height: 1.1;
   text-align: center;  
 }
 
 .aligned-text_right {
   display: block;
   margin-right: -30px;
-  line-height: 1;
+  line-height: 0.9;
   text-align: right;
 }
 
@@ -146,40 +145,135 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  padding-right: 50px;
-
   gap: 78px;
+  margin-right: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
 }
 
 .cover__description-text {
-  color: #FFF;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 28px;
-  letter-spacing: 0;
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  word-spacing: 18px;
+  word-spacing: 17px;
+}
+
+.cover__description-text_word-spacing {
+  word-spacing: 22px;
 }
 
 .bet_button {
-  border: 1px solid #000;
-  color: #FFF;
-  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 12px 32px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
-  font-style: normal;
-  line-height: normal;
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
   cursor: pointer;
-  border-color: #FFF;
-  padding: 12px 32px;
 }
 
 .lots {
-  padding: 90px 50px;
+  width: 100%;
+  height: 757px;
+  padding: 181px 50px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  margin-left: 40px;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style-type: none;
+
+}
+
+.card {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 430px;
+  height: 450px;
+  padding: 50px 40px;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  line-height: 1.2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 0 0 / .6);
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card-link {
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.lots__look-more-link {
+  display: block;
+  margin: 30px auto 2px 40px;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .about {
