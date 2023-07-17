@@ -91,6 +91,8 @@
   margin-bottom: 90px;
 }
 
+/* ---- Накладываем overlay ---- */
+
 .cover::before {
   content: "";
   position: absolute;
