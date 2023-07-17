@@ -128,7 +128,6 @@
   letter-spacing: 60px;
 }
 
-
 .aligned-text_center {
   display: block;
   line-height: 1.1;
@@ -177,6 +176,8 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+/* ---- ОПИСАНИЕ LOTS ---- */
 
 .lots {
   width: 100%;
@@ -277,6 +278,8 @@
   text-underline-offset: 4px;
 }
 
+/* ---- ОПИСАНИЕ ABOUT ---- */
+
 .about {
   padding: 90px 50px;
 }
@@ -331,6 +334,8 @@
   font-weight: 400;
   line-height: normal;
 }
+
+/* ---- ОПИСАНИЕ FOOTER ---- */
 
 .footer {
   padding: 90px 50px;
