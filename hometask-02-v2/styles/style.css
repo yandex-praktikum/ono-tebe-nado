@@ -1,0 +1,276 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header__links-list-item {
+  font-size: 18px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.header__link_active {
+  border-bottom: none;
+}
+
+.header__logo {
+  width: 148px;
+}
+
+.address {
+  max-width: 240px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.header__address {
+  justify-self: end;
+}
+
+.address a {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.cover {
+  position: relative;
+  padding: 165px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0/0.6);
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 135px;
+  color: #fff;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  /* пришлось внедрить отдельный класс для последней буквы. выглядит зашкварно, но можно */
+  letter-spacing: initial;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 78px;
+}
+
+.cover__description-text {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+
+  /* незнакомое свойство, надо дать подсказку */
+  word-spacing: 18px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.lots {
+  padding: 180px 24px 0;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  padding: 0 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 334px;
+  min-height: 450px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px;
+  color: #fff;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  z-index: 1;
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  z-index: 1;
+  font-size: 20px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+  border-bottom: 1px solid;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 25px;
+  padding: 180px 24px;
+}
+
+.about__column_size_large {
+  grid-column: span 2;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  margin: 100px 0;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+
+  /* Всё еще не умеют в псевдоклассы */
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  padding: 0 50px 90px;
+}
+
+.footer__menu-list {
+  font-size: 18px;
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.footer__menu-link_active {
+  border-bottom: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+}
