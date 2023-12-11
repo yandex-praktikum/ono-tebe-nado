@@ -22,13 +22,13 @@ jobs:
       run: exit 1
       if: ${{github.event.repository.private}}
     - name: Get testing lib
-      run: set -eu && git clone --branch main --single-branch --depth 1 https://github.com/Yandex-Practicum/tests-selfmade-project-2-public.git
+      run: set -eu && git clone --branch main --single-branch --depth 1 https://github.com/Yandex-Practicum/tests-selfmade-project-2-v2-public.git
     - name: Run the tests
-      run: bash tests-selfmade-project-2-public/run.sh
+      run: bash tests-selfmade-project-2-v2-public/run.sh
     - name: Upload layout-compare
       uses: actions/upload-artifact@v3
       with:
         name: layout-compare
-        path: tests-selfmade-project-2-public/output.jpg
+        path: tests-selfmade-project-2-v2-public/output.jpg
     - name: Show test results
-      run: bash tests-selfmade-project-2-public/result.sh
+      run: bash tests-selfmade-project-2-v2-public/result.sh
